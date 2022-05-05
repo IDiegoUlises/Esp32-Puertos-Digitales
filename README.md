@@ -3,6 +3,10 @@
 
 * **Tiene 30 puertos**
 * **Voltaje es de 0 a 3.3 Volt**
+* **la siguiente es informacion no oficial y debe ser verificada**
+* **25 puertos digitales de salida**
+* **15 Puertos PWM**
+* **2 Puertos Conversor analogico digital**
 
 
 ### Conexion Puerto Digital
