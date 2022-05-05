@@ -31,3 +31,5 @@ void loop()
   delay(1000);
 }
 ```
+### Investigacion
+* **Puertos d13,d12,d14,d27,d26,d25,d33,d32,d35,d34,vn,vp a probar**
