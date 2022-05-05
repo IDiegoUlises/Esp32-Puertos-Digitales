@@ -2,7 +2,8 @@
 <img src="https://github.com/IDiegoUlises/Esp32-Puertos-Digitales/blob/main/Images/ESP32-DOIT-DEVKIT.jpg" width="1000" height="400" />
 
 * **Tiene 30 puertos**
-* **Voltaje es de 0 a 3.3 Volt**
+* **Voltaje de alimentacion es de 5 Volt**
+* **Voltaje de los pines es de 0 a 3.3 Volt**
 * **la siguiente es informacion no oficial y debe ser verificada**
 * **25 puertos digitales de salida**
 * **15 Puertos PWM**
