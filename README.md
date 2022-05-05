@@ -32,5 +32,6 @@ void loop()
 }
 ```
 ### Investigacion
-* Puertos d13,d12,d14,d27,d26,d25,d33,d32,d35,d34,vn,vp a probar
-* todos los puertos funcionan correctamente pero los puertos d35,d34,vn(gpio39),vp(gpio36) no funcionan y encontre documentacion que estos puertos sirven solamente como entradas
+* Puertos d13,d12,d14,d27,d26,d25,d33,d32,d35,d34,vn,vp todos los puertos probados y todo funcionan menos 4 pines
+* todos los puertos GPIO funcionan correctamente pero los puertos d35(35),d34(34),vn(gpio39),vp(gpio36) no funcionan como salida como output) y encontre documentacion que estos puertos sirven solamente como entradas
+* Ahora falta probar las entradas
