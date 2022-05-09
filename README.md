@@ -35,3 +35,26 @@ void loop()
 * Puertos d13,d12,d14,d27,d26,d25,d33,d32,d35,d34,vn,vp todos los puertos probados y todo funcionan menos 4 pines
 * todos los puertos GPIO funcionan correctamente pero los puertos d35(gpio35),d34(gpio34),vn(gpio39),vp(gpio36) no funcionan como salida como output y encontre documentacion que estos puertos sirven solamente como entradas
 * Ahora falta probar las entradas
+
+El pin 5 solo se puede hacer una lectura con INPUT_PULLUP
+```c++
+void setup() {
+  Serial.begin(9600);
+  pinMode(5, INPUT_PULLUP);
+  pinMode(23,OUTPUT);
+}
+
+void loop()
+{
+  int puerto1 = digitalRead(5);
+  if (puerto1 == LOW)
+  {
+    Serial.println("Puerto 5 pulsado");
+    digitalWrite(23,HIGH);
+    delay(1000);
+    digitalWrite(23,LOW);
+  }
+
+  delay(100);
+}
+```
