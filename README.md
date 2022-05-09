@@ -36,7 +36,7 @@ void loop()
 * todos los puertos GPIO funcionan correctamente pero los puertos d35(gpio35),d34(gpio34),vn(gpio39),vp(gpio36) no funcionan como salida como output y encontre documentacion que estos puertos sirven solamente como entradas
 * Ahora falta probar las entradas
 
-El pin 5 solo se puede hacer una lectura con INPUT_PULLUP
+### El pin 5 solo se puede hacer una lectura con INPUT_PULLUP
 ```c++
 void setup() {
   Serial.begin(9600);
@@ -55,6 +55,28 @@ void loop()
     digitalWrite(23,LOW);
   }
 
+  delay(100);
+}
+```
+
+### El pin 1 y 3 Utilizan el puerto serial para utilizar estos puertos no se deben utilizar el puerto serial porque al ser una entrada interfiere con la comunicacion serial y cuando se este subiendo el sketch estos puertos no deben recibir voltaje ya que marcara un error al subir el sketch y no se subira
+
+```c++
+void setup() {
+  //Serial.begin(9600);
+  pinMode(1, INPUT_PULLUP); //puerto 1 o puerto 3
+  pinMode(23,OUTPUT);
+}
+
+void loop()
+{
+  int puerto1 = digitalRead(1);
+  if (puerto1 == LOW)
+  {
+    digitalWrite(23,HIGH);
+    delay(1000);
+    digitalWrite(23,LOW);
+  }
   delay(100);
 }
 ```
