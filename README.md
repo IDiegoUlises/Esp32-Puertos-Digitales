@@ -81,7 +81,7 @@ void loop()
 }
 ```
 
-### Para las entradas del lado izquierdo funciona correctamente los pines GPIO39,GPIO36,GPIO35,GPIO34 no incorporan resistencia interna pulldown o pullup aunque los pines GPIO34,GPIO35 funcionan correctamente como entradas sin resistencia externa
+### Para todas las entradas del lado izquierdo funciona correctamente los pines GPIO39,GPIO36,GPIO35,GPIO34 no incorporan resistencia interna pulldown o pullup aunque los pines GPIO34,GPIO35 funcionan correctamente como entradas sin resistencia externa
 ```c++
 void setup()
 {
