@@ -80,3 +80,105 @@ void loop()
   delay(100);
 }
 ```
+
+### Para las entradas del lado izquierdo funciona correctamente los pines GPIO39,GPIO36,GPIO35,GPIO34 no incorporan resistencia interna pulldown o pullup aunque los pines GPIO34,GPIO35 funcionan correctamente como entradas sin resistencia externa
+```c++
+void setup()
+{
+  Serial.begin(9600);
+  pinMode(36, INPUT);//No tiene resistencia interna, Se le debe colocar un pulldown
+  pinMode(39, INPUT);//No tiene resistencia interna, Se le debe colocar un pulldown
+  pinMode(34, INPUT);//No tiene resistencia interna, Funciona igual como entrada
+  pinMode(35, INPUT);//No tiene resistencia interna, Funciona Igual como entrada
+  pinMode(32, INPUT_PULLDOWN);
+  pinMode(33, INPUT_PULLDOWN);
+  pinMode(25, INPUT_PULLDOWN);
+  pinMode(26, INPUT_PULLDOWN);
+  pinMode(27, INPUT_PULLDOWN);
+  pinMode(14, INPUT_PULLDOWN);
+  pinMode(12, INPUT_PULLDOWN);
+  pinMode(13, INPUT_PULLDOWN);
+  
+  //36=vp se necesita una resistencia interna
+  //39=vn se necesita una resistencia interna
+  //34=d34 Funciona sin resistencia externa
+  //35=d35 Funciona sin resistencia externa
+}
+
+void loop()
+{
+  int puerto1 = digitalRead(36);
+  if (puerto1 == HIGH)
+  {
+    Serial.println("Puerto 36 pulsado");
+  }
+
+  int puerto2 = digitalRead(39);
+  if (puerto2 == HIGH)
+  {
+    Serial.println("Puerto 39 pulsado");
+  }
+
+  int puerto3 = digitalRead(34);
+  if (puerto3 == HIGH)
+  {
+    Serial.println("Puerto 34 pulsado");
+  }
+
+  int puerto4 = digitalRead(35);
+  if (puerto4 == HIGH)
+  {
+    Serial.println("Puerto 35 pulsado");
+  }
+
+  int puerto5 = digitalRead(32);
+  if (puerto5 == HIGH)
+  {
+    Serial.println("Puerto 32 pulsado");
+  }
+
+  int puerto6 = digitalRead(33);
+  if (puerto6 == HIGH)
+  {
+    Serial.println("Puerto 33 pulsado");
+  }
+
+  int puerto7 = digitalRead(25);
+  if (puerto7 == HIGH)
+  {
+    Serial.println("Puerto 25 pulsado");
+  }
+
+  int puerto8 = digitalRead(26);
+  if (puerto8 == HIGH)
+  {
+    Serial.println("Puerto 26 pulsado");
+  }
+
+  int puerto9 = digitalRead(27);
+  if (puerto9 == HIGH)
+  {
+    Serial.println("Puerto 27 pulsado");
+  }
+
+  int puerto10 = digitalRead(14);
+  if (puerto10 == HIGH)
+  {
+    Serial.println("Puerto 14 pulsado");
+  }
+
+  int puerto11 = digitalRead(12);
+  if (puerto11 == HIGH)
+  {
+    Serial.println("Puerto 12 pulsado");
+  }
+
+  int puerto12 = digitalRead(13);
+  if (puerto12 == HIGH)
+  {
+    Serial.println("Puerto 13 pulsado");
+  }
+
+  delay(300);
+}
+```
