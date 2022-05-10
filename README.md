@@ -81,6 +81,111 @@ void loop()
 }
 ```
 
+### Todas las entradas del lado derecho modificar codigo eliminar del codigo las entradas 1,3 y 5 
+
+```c++
+void setup()
+{
+  Serial.begin(115200);
+  pinMode(23, INPUT_PULLDOWN);
+  pinMode(22, INPUT_PULLDOWN);
+  pinMode(1, INPUT_PULLDOWN);
+  pinMode(3, INPUT_PULLDOWN);
+  pinMode(21, INPUT_PULLDOWN);
+  pinMode(19, INPUT_PULLDOWN);
+  pinMode(18, INPUT_PULLDOWN);
+  pinMode(5, INPUT_PULLDOWN);
+  pinMode(17, INPUT_PULLDOWN);
+  pinMode(16, INPUT_PULLDOWN);
+  pinMode(4, INPUT_PULLDOWN);
+  pinMode(2, INPUT_PULLDOWN);
+  pinMode(15, INPUT_PULLDOWN);
+}
+
+void loop()
+{
+  int puerto1 = digitalRead(23);
+  if (puerto1 == HIGH)
+  {
+    Serial.println("Puerto 23 pulsado");
+  }
+
+  int puerto2 = digitalRead(22);
+  if (puerto2 == HIGH)
+  {
+    Serial.println("Puerto 22 pulsado");
+  }
+
+  int puerto3 = digitalRead(1);
+  if (puerto3 == HIGH)
+  {
+    Serial.println("Puerto 1 pulsado");
+  }
+
+  int puerto4 = digitalRead(3);
+  if (puerto4 == HIGH)
+  {
+    Serial.println("Puerto 3 pulsado");
+  }
+
+  int puerto5 = digitalRead(21);
+  if (puerto5 == HIGH)
+  {
+    Serial.println("Puerto 21 pulsado");
+  }
+
+  int puerto6 = digitalRead(19);
+  if (puerto6 == HIGH)
+  {
+    Serial.println("Puerto 19 pulsado");
+  }
+
+  int puerto7 = digitalRead(18);
+  if (puerto7 == HIGH)
+  {
+    Serial.println("Puerto 18 pulsado");
+  }
+
+  int puerto8 = digitalRead(5);
+  if (puerto8 == HIGH)
+  {
+    Serial.println("Puerto 5 pulsado");
+  }
+
+  int puerto9 = digitalRead(17);
+  if (puerto9 == HIGH)
+  {
+    Serial.println("Puerto 17 pulsado");
+  }
+
+  int puerto10 = digitalRead(16);
+  if (puerto10 == HIGH)
+  {
+    Serial.println("Puerto 16 pulsado");
+  }
+
+  int puerto11 = digitalRead(4);
+  if (puerto11 == HIGH)
+  {
+    Serial.println("Puerto 4 pulsado");
+  }
+
+  int puerto12 = digitalRead(2);
+  if (puerto12 == HIGH)
+  {
+    Serial.println("Puerto 2 pulsado");
+  }
+
+  int puerto13 = digitalRead(15);
+  if (puerto13 == HIGH)
+  {
+    Serial.println("Puerto 15 pulsado");
+  }
+
+  delay(100);
+}
+```
+
 ### Para todas las entradas del lado izquierdo funciona correctamente los pines GPIO39,GPIO36,GPIO35,GPIO34 no incorporan resistencia interna pulldown o pullup aunque los pines GPIO34,GPIO35 funcionan correctamente como entradas sin resistencia externa
 ```c++
 void setup()
