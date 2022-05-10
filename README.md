@@ -59,7 +59,7 @@ void loop()
 }
 ```
 
-### El pin 1 y 3 Utilizan el puerto serial para utilizar estos puertos no se deben utilizar el puerto serial porque al ser una entrada interfiere con la comunicacion serial y cuando se este subiendo el sketch estos puertos no deben recibir voltaje ya que marcara un error al subir el sketch y no se subira porque cuando se suba el sketch atraves del computador interferira con la comunicacion serial
+### El pin 1 y 3 Utilizan el puerto serial para utilizar estos puertos no se deben utilizar el puerto serial porque al ser una entrada interfiere con la comunicacion serial y cuando se este subiendo el sketch estos puertos no deben recibir voltaje ya que marcara un error al subir el sketch y no se subira porque cuando se suba el sketch atraves del computador interferira con la comunicacion serial recordar que no funciona con inputpulldown pero funciona con INPUT_PULLUP en los puertos 1 y 3
 
 ```c++
 void setup() {
