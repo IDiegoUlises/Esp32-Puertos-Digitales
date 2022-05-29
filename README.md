@@ -89,12 +89,12 @@ void setup()
   Serial.begin(115200);
   pinMode(23, INPUT_PULLDOWN);
   pinMode(22, INPUT_PULLDOWN);
-  pinMode(1, INPUT_PULLDOWN);
-  pinMode(3, INPUT_PULLDOWN);
+  //pinMode(1, INPUT_PULLDOWN);
+  //pinMode(3, INPUT_PULLDOWN);
   pinMode(21, INPUT_PULLDOWN);
   pinMode(19, INPUT_PULLDOWN);
   pinMode(18, INPUT_PULLDOWN);
-  pinMode(5, INPUT_PULLDOWN);
+  //pinMode(5, INPUT_PULLDOWN);
   pinMode(17, INPUT_PULLDOWN);
   pinMode(16, INPUT_PULLDOWN);
   pinMode(4, INPUT_PULLDOWN);
