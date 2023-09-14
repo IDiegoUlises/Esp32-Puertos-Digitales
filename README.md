@@ -6,7 +6,7 @@
 * **Voltaje de los pines es de 0 a 3.3 Volt**
 * **25 puertos digitales de salida**
 * **15 Puertos PWM**
-* **2 Puertos Conversor analogico digital**
+* **2 Puertos conversor analogico digital**
 * **9 Pin touch**
 
 ### Conexion Puerto Digital
