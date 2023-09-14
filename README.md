@@ -4,12 +4,10 @@
 * **Tiene 30 puertos**
 * **Voltaje de alimentacion es de 5 Volt**
 * **Voltaje de los pines es de 0 a 3.3 Volt**
-* **la siguiente es informacion no oficial y debe ser verificada**
 * **25 puertos digitales de salida**
-* **15 Puertos PWM(en otra fuente dice que son 25 verificar)**
+* **15 Puertos PWM**
 * **2 Puertos Conversor analogico digital**
 * **9 Pin touch**
-
 
 ### Conexion Puerto Digital
 <img src="https://github.com/IDiegoUlises/Esp32-Puertos-Digitales/blob/main/Images/Apagar-y-prender.jpg" width="500" height="500" />
